@@ -28,7 +28,7 @@ with(hpc, {
        ylab="Global Active Power (kilowatts)", xlab="")
   lines(Sub_metering_2~datetime,col='Red')
   lines(Sub_metering_3~datetime,col='Blue')
-  legend("topright", col=c("black", "red", "blue"), lwd=c(1,1,1), c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
+  legend("topright", col=c("black", "red", "blue"), lty=1, lwd=2, bty="n", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"))
   plot(Global_reactive_power~datetime, type="l", 
        ylab="Global Rective Power (kilowatts)",xlab="datetime")
 })
