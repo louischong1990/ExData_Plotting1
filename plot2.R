@@ -19,3 +19,6 @@ hpc$datetime <- as.POSIXct(datetime)
 
 #Plot 2
 plot(hpc$Global_active_power~hpc$datetime, type="l", ylab="Global Active Power (kilowatts)", xlab="")
+
+dev.copy(png, file = "plot2.png")
+dev.off()
